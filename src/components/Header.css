@@ -1,0 +1,80 @@
+#root {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* background-color: var(--color-secondary); */
+}
+
+header #logo {
+  display: flex;
+  align-items: center;
+  /* background-color: var(--color-secondary); */
+}
+
+header #logo-text {
+  color: var(--color-primary);
+  font-size: 1.2em;
+  font-weight: 900;
+  margin-left: 5px;
+}
+
+header > nav {
+  /* flex-basis: 50%; Too spread out */
+  flex-basis: 600px;
+}
+
+header > nav > ul {
+  display: flex;
+  align-items: center;
+  /* border: 5px solid black; */
+
+  font-size: 1em;
+  font-weight: 700;
+}
+
+header nav li {
+  flex: 1;
+
+  padding: 10px;
+  text-align: center;
+  color: var(--color-primary);
+  list-style-type: none;
+}
+
+header nav li:hover {
+  color: var(--color-secondary);
+}
+
+header nav li#nav-new {
+  /* border: 1px solid var(--color-secondary); */
+  color: white;
+  background-color: var(--color-primary);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+header nav li#nav-new:hover {
+  color: white;
+  background-color: var(--color-secondary);
+  border-radius: 10px;
+}
+
+header nav #nav-account {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header nav #nav-account svg {
+  width: 30px;
+  margin: 5px;
+}
+
+header nav #nav-account:hover svg {
+  fill: var(--color-secondary);
+}

@@ -1,0 +1,47 @@
+.card {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 25%;
+  min-width: 300px;
+
+  /* border: 1px solid darkgrey; */
+  border-radius: 10px;
+  overflow: hidden;
+
+  background-color: white;
+  margin: 20px;
+  padding: 0;
+  box-shadow: 5px 5px 5px darkgrey;
+}
+
+.card:hover {
+  box-shadow: 10px 10px 10px darkgrey;
+}
+
+.title-bar {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-primary);
+
+  min-height: 40px;
+}
+
+.title-bar > img {
+  color: white; /* Doesn't work for SVG, need filter instead */
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(264deg)
+    brightness(101%) contrast(102%);
+
+  margin: 2px 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.title-bar > h1 {
+  color: white;
+  font-size: small;
+  text-transform: uppercase;
+  font-weight: 300;
+
+  /* padding-left: 10px; */
+  margin: 10px;
+}
