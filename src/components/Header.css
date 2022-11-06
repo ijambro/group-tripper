@@ -31,10 +31,6 @@ header > nav {
 header > nav > ul {
   display: flex;
   align-items: center;
-  /* border: 5px solid black; */
-
-  font-size: 1em;
-  font-weight: 700;
 }
 
 header nav li {
@@ -42,11 +38,16 @@ header nav li {
 
   padding: 10px;
   text-align: center;
-  color: var(--color-primary);
   list-style-type: none;
 }
 
-header nav li:hover {
+header nav a {
+  font-size: 1em;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+header nav a:hover {
   color: var(--color-secondary);
 }
 
