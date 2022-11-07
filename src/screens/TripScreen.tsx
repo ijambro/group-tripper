@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
 import reactLogo from "./assets/react.svg";
-import "./TripScreen.css";
 import Travelers from "../components/Travelers";
 import Discussion from "../components/Discussion";
-import Header from "../components/Header";
 import CardView from "../components/CardView";
 import Card from "../components/Card";
 import TripInfo from "../components/TripInfo";
@@ -20,6 +18,7 @@ import discussionIcon from "../assets/icons/zondicons/conversation.svg";
 import travelIcon from "../assets/icons/zondicons/airplane.svg";
 import lodgingIcon from "../assets/icons/zondicons/home.svg";
 import activitiesIcon from "../assets/icons/zondicons/ticket.svg";
+import "./TripScreen.css";
 
 export default function TripScreen() {
   console.log("Rendering TripScreen");
