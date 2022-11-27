@@ -5,7 +5,7 @@ export declare interface User {
   name: string;
   email: string;
   passwordHash: string;
-  photoUrl: string;
+  photoUrl?: string;
 }
 
 export declare interface Event {
