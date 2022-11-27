@@ -10,6 +10,7 @@ header #logo {
   display: flex;
   align-items: center;
   /* background-color: var(--color-secondary); */
+  margin-left: 10px;
 }
 
 header #logo-text {
