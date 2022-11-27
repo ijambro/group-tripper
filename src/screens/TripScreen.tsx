@@ -6,10 +6,8 @@ import CardView from "../components/CardView";
 import Card from "../components/Card";
 import TripInfo from "../components/TripInfo";
 
-// import { Trip } from "../types/types";
-
-import { tripInfo } from "../data/tripInfo";
-import { destinationComments } from "../data/destinationComments";
+import { events } from "../data/events";
+import { comments } from "../data/comments";
 import travelerNames from "../data/travelers.json";
 
 import tripNameIcon from "../assets/icons/zondicons/location.svg";
@@ -26,8 +24,8 @@ export default function TripScreen() {
   return (
     <div id="trip-screen">
       <CardView>
-        <Card title={tripInfo[0].name} icon={tripNameIcon}>
-          <TripInfo trip={tripInfo[0]}></TripInfo>
+        <Card title={events[0].name || "Your Trip"} icon={tripNameIcon}>
+          <TripInfo event={events[0]}></TripInfo>
         </Card>
 
         <Card title="Travelers" icon={travelerIcon}>
@@ -35,7 +33,7 @@ export default function TripScreen() {
         </Card>
 
         <Card title="Discussion" icon={discussionIcon}>
-          <Discussion comments={destinationComments} />
+          <Discussion comments={comments} />
         </Card>
 
         <Card title="Travel / Airfare" icon={travelIcon}>

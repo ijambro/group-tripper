@@ -11,7 +11,7 @@ export default function Discussion(props: DiscussionProps) {
     <>
       {comments.map(c => (
         <div key={c.id}>
-          <p>{c.fromName}</p>
+          <p>User {c.userId}</p>
           <p>{c.text}</p>
         </div>
       ))}

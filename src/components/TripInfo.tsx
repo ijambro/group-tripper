@@ -1,28 +1,24 @@
-import { Trip } from "../types/types";
+import { Event } from "../types/types";
 import "./TripInfo.css";
 
 export declare interface TripInfoProps {
-  trip: Trip;
+  event: Event;
 }
 
 export default function TripInfo(props: TripInfoProps) {
-  const { trip } = props;
-  const { id, name, destination, startDate, endDate } = trip;
+  const { event } = props;
 
-  console.log("TripInfo: trip", trip);
+  console.log("TripInfo component: event", event);
 
   return (
     <div id="trip-info">
-      {/* <span> */}
-      <img src="https://cdn.pixabay.com/photo/2014/09/07/22/17/forest-438432_960_720.jpg" />
-      {/* </span> */}
-      {/* <span> */}
+      <img src={event.photoUrl ? event.photoUrl : "/vite.svg"} />
       <p>Where: </p>
-      <p>{destination}</p>
+      <p>{event.location?.name}</p>
       <p>Start Date: </p>
-      <p>{startDate.toLocaleDateString()}</p>
+      <p>{event.startDate?.toLocaleDateString()}</p>
       <p>End Date: </p>
-      <p>{endDate.toLocaleDateString()}</p>
+      <p>{event.endDate?.toLocaleDateString()}</p>
       {/* </span> */}
     </div>
   );
