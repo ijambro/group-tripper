@@ -11,6 +11,7 @@ function App() {
       <Routes>
         <Route path="login" element={<LoginScreen />} />
         <Route element={<Layout />}>
+          <Route index element={<TripScreen />} />
           <Route path="trip" element={<TripScreen />} />
         </Route>
       </Routes>
