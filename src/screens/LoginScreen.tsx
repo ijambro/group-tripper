@@ -5,7 +5,7 @@ export default function LoginScreen() {
   const navigate = useNavigate();
 
   const doLogin = () => {
-    return navigate("/trip");
+    return navigate("/");
   };
 
   return (

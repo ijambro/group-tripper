@@ -14,9 +14,11 @@ export default function Header() {
         <ul>
           {/* <li id="nav-welcome">Welcome, Jake</li> */}
           <li id="nav-all">
-            <Link to="/trip">My Trips</Link>
+            <Link to="/trips">My Trips</Link>
           </li>
-          <li id="nav-new">Plan New Trip</li>
+          <li id="nav-new">
+            <Link to="/new">Plan New Trip</Link>
+          </li>
 
           <li id="nav-account">
             <svg

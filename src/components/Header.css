@@ -59,6 +59,13 @@ header nav li#nav-new {
   box-sizing: border-box;
 }
 
+header nav li#nav-new a {
+  /* border: 1px solid var(--color-secondary); */
+  color: white;
+  font-size: 1em;
+  font-weight: 700;
+}
+
 header nav li#nav-new:hover {
   color: white;
   background-color: var(--color-secondary);

@@ -1,5 +1,6 @@
 {
   "name": "group-tripper",
+  "description": "🧳 Plan, book and coordinate travel with your friends, family or team! Organize destinations, travelers, airfare, lodging and activities with every conversation in context. A Typescript, React and ViteJS app running on Cloudflare Pages with PostgreSQL on Google Cloud SQL.",
   "private": true,
   "version": "0.0.0",
   "type": "module",
