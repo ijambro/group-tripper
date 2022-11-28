@@ -49,8 +49,10 @@ export default function Discussion(props: DiscussionProps) {
           </div>
         );
       })}
-      <input ref={newCommentRef}></input>
-      <button onClick={onPostComment}>Post 💬</button>
+      <div className="form">
+        <input ref={newCommentRef} placeholder="Add a comment..."></input>
+        <button onClick={onPostComment}>Post</button>
+      </div>
     </div>
   );
 }

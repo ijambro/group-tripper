@@ -29,6 +29,11 @@
   padding-left: 50px;
 }
 
+#discussion-component .form {
+  display: flex;
+  flex: 1;
+}
+
 #discussion-component input {
   width: 75%;
   height: 2em;
