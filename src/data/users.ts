@@ -9,7 +9,7 @@ export const users: User[] = [
     email: "jakepalmer@duck.com",
     passwordHash: "abcdef",
     photoUrl:
-      "https://media-exp1.licdn.com/dms/image/C4D03AQFFi-OH_7o34w/profile-displayphoto-shrink_100_100/0/1596142214469?e=1675296000&v=beta&t=b-edFL07h5FKrT4sZ6d8Esf2PGWRWlOrzm3FUH6eNjs"
+      "https://lh3.googleusercontent.com/ogw/AOh-ky0q3xUxlqnm9AWyHT1ebiMKgX7shWiPY6t_Jy3c"
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ export const users: User[] = [
     email: "sarah.hiller@gmail.com",
     passwordHash: "abcdef",
     photoUrl:
-      "https://media-exp1.licdn.com/dms/image/C4D03AQFFi-OH_7o34w/profile-displayphoto-shrink_100_100/0/1596142214469?e=1675296000&v=beta&t=b-edFL07h5FKrT4sZ6d8Esf2PGWRWlOrzm3FUH6eNjs"
+      "https://lh3.googleusercontent.com/contacts/ABsqplvehIN_DgMuKWmszCyAEkiDTgZBH-K44GwiD-2WqmR-xRSlSqH_"
   },
   {
     id: 3,
@@ -27,9 +27,7 @@ export const users: User[] = [
     updatedDate: new Date(),
     name: "Leon",
     email: "leon@duck.com",
-    passwordHash: "abcdef",
-    photoUrl:
-      "https://media-exp1.licdn.com/dms/image/C4D03AQFFi-OH_7o34w/profile-displayphoto-shrink_100_100/0/1596142214469?e=1675296000&v=beta&t=b-edFL07h5FKrT4sZ6d8Esf2PGWRWlOrzm3FUH6eNjs"
+    passwordHash: "abcdef"
   },
   {
     id: 4,
@@ -37,9 +35,7 @@ export const users: User[] = [
     updatedDate: new Date(),
     name: "Adrian",
     email: "adrian@duck.com",
-    passwordHash: "abcdef",
-    photoUrl:
-      "https://media-exp1.licdn.com/dms/image/C4D03AQFFi-OH_7o34w/profile-displayphoto-shrink_100_100/0/1596142214469?e=1675296000&v=beta&t=b-edFL07h5FKrT4sZ6d8Esf2PGWRWlOrzm3FUH6eNjs"
+    passwordHash: "abcdef"
   },
   {
     id: 5,
@@ -47,8 +43,6 @@ export const users: User[] = [
     updatedDate: new Date(),
     name: "Shira",
     email: "shira@duck.com",
-    passwordHash: "abcdef",
-    photoUrl:
-      "https://media-exp1.licdn.com/dms/image/C4D03AQFFi-OH_7o34w/profile-displayphoto-shrink_100_100/0/1596142214469?e=1675296000&v=beta&t=b-edFL07h5FKrT4sZ6d8Esf2PGWRWlOrzm3FUH6eNjs"
+    passwordHash: "abcdef"
   }
 ];

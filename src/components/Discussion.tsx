@@ -1,7 +1,11 @@
 import { useRef } from "react";
-import { Comment } from "../types/types";
+import { users } from "../data/users";
+import { Comment, User } from "../types/types";
+
+import "./Discussion.css";
 
 export declare interface DiscussionProps {
+  users: User[];
   comments: Comment[];
   handleAddComment: Function;
 }
@@ -24,15 +28,29 @@ export default function Discussion(props: DiscussionProps) {
   };
 
   return (
-    <>
-      {comments.map(c => (
-        <div key={c.id}>
-          <p>User {c.userId}</p>
-          <p>{c.text}</p>
-        </div>
-      ))}
+    <div id="discussion-component">
+      {comments.map(c => {
+        const user = users.find(u => u.id === c.userId);
+
+        return (
+          <div key={c.id} className="comment">
+            <div className="comment-user-avatar">
+              <img
+                src={
+                  user?.photoUrl ||
+                  "https://cdn-icons-png.flaticon.com/128/747/747545.png"
+                }
+              />
+              <span className="name">{user?.name || "Anonymous"}</span>
+              <span className="date">{c.createdDate.toLocaleString()}</span>
+            </div>
+
+            <div className="comment-text">{c.text}</div>
+          </div>
+        );
+      })}
       <input ref={newCommentRef}></input>
-      <button onClick={onPostComment}>Post</button>
-    </>
+      <button onClick={onPostComment}>Post 💬</button>
+    </div>
   );
 }

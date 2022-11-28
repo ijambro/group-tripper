@@ -1,0 +1,53 @@
+#discussion-component {
+  text-align: left;
+  padding: 10px;
+}
+
+#discussion-component .comment {
+  padding-bottom: 25px;
+}
+
+#discussion-component .comment-user-avatar {
+  display: flex;
+  align-items: center;
+}
+
+#discussion-component .comment-user-avatar img {
+  width: 45px;
+  border: 3px solid var(--color-primary);
+  border-radius: 45px;
+}
+
+#discussion-component .comment-user-avatar .name {
+  font-weight: 700;
+  padding-left: 10px;
+}
+
+#discussion-component .comment-user-avatar .date {
+  font-weight: 100;
+  color: lightgray;
+  padding-left: 50px;
+}
+
+#discussion-component input {
+  width: 75%;
+  height: 2em;
+}
+
+#discussion-component button {
+  color: white;
+  font-size: 1em;
+  font-weight: 700;
+
+  background-color: var(--color-primary);
+  border-width: 0;
+  outline: 0; /* To override a :focus-visible style */
+  border-radius: 10px;
+  box-sizing: border-box;
+
+  margin-left: 10px;
+}
+
+#discussion-component button:hover {
+  background-color: var(--color-secondary);
+}

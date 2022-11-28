@@ -8,6 +8,7 @@ import TripInfo from "../components/TripInfo";
 
 import { Comment } from "../types/types";
 
+import { users } from "../data/users";
 import { events } from "../data/events";
 import { comments } from "../data/comments";
 import travelerNames from "../data/travelers.json";
@@ -64,6 +65,7 @@ export default function TripScreen() {
 
         <Card title="Discussion" icon={discussionIcon}>
           <Discussion
+            users={users}
             comments={commentsForEvent}
             handleAddComment={handleAddComment}
           />
