@@ -5,7 +5,8 @@ export const users: User[] = [
     id: 1,
     createdDate: new Date(),
     updatedDate: new Date(),
-    name: "Jake",
+    firstName: "Jake",
+    lastName: "Palmer",
     email: "jakepalmer@duck.com",
     passwordHash: "abcdef",
     photoUrl:
@@ -15,8 +16,9 @@ export const users: User[] = [
     id: 2,
     createdDate: new Date(),
     updatedDate: new Date(),
-    name: "Sarah",
-    email: "sarah.hiller@gmail.com",
+    firstName: "Sarah",
+    lastName: "Palmer",
+    email: "sarah@duck.com",
     passwordHash: "abcdef",
     photoUrl:
       "https://lh3.googleusercontent.com/contacts/ABsqplvehIN_DgMuKWmszCyAEkiDTgZBH-K44GwiD-2WqmR-xRSlSqH_"
@@ -25,7 +27,8 @@ export const users: User[] = [
     id: 3,
     createdDate: new Date(),
     updatedDate: new Date(),
-    name: "Leon",
+    firstName: "Leon",
+    lastName: "Palmer",
     email: "leon@duck.com",
     passwordHash: "abcdef"
   },
@@ -33,7 +36,8 @@ export const users: User[] = [
     id: 4,
     createdDate: new Date(),
     updatedDate: new Date(),
-    name: "Adrian",
+    firstName: "Adrian",
+    lastName: "Palmer",
     email: "adrian@duck.com",
     passwordHash: "abcdef"
   },
@@ -41,7 +45,8 @@ export const users: User[] = [
     id: 5,
     createdDate: new Date(),
     updatedDate: new Date(),
-    name: "Shira",
+    firstName: "Shira",
+    lastName: "Palmer",
     email: "shira@duck.com",
     passwordHash: "abcdef"
   }

@@ -2,7 +2,8 @@ export declare interface User {
   id: number;
   createdDate: Date;
   updatedDate: Date;
-  name: string;
+  firstName: string;
+  lastName: string;
   email: string;
   passwordHash: string;
   photoUrl?: string;
